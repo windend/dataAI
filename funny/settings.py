@@ -25,7 +25,8 @@ SECRET_KEY = ')0-+lu6@3@d72uk2g(31%wob1afjhz9m4pd#(fvm2)iw_==0+o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['saddness.f3322.net','sad.in.8866.org']
+ALLOWED_HOSTS = ['737d5bf8.ngrok.io', '127.0.0.1']
 
 
 # Application definition
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'funny.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR + 'polls/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
