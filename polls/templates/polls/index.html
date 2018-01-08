@@ -1,3 +1,5 @@
+<h1>Vote System</h1>
+<h2>Question List </h2>
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -7,3 +9,6 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+{%load static%}
+<link rel="stylesheet" href="{%static 'polls/style.css' %}">
+
